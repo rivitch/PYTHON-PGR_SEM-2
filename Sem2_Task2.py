@@ -5,12 +5,12 @@ from math import gcd
 first_fraction = input("Введите первую дробь : ").split("/")
 sec_fraction = input("Введите вторую дробь : ").split("/")
 
-a=int(first_fraction[0])
-b=int(first_fraction[1])
-x=int(sec_fraction[0])
-y=int(sec_fraction[1])
-z= gcd((a*x),(b*y))
-q= gcd((a*y)+(x*b),(b*y))
+a=int(first_fraction[0]) #числитель первой дроби
+b=int(first_fraction[1]) #знаменвтель первой дроби 
+x=int(sec_fraction[0])   #числитель второй дроби
+y=int(sec_fraction[1])   #знаменвтель второй дроби 
+z= gcd((a*x),(b*y))      #НОД  для произведения
+q= gcd((a*y)+(x*b),(b*y))#НОД  для суммы
 #print(f"Произведение дробей равно : {(int(first_fraction[0])*int(sec_fraction[0]))//(int(first_fraction[1])*int(sec_fraction[1]))}")
 #print(z,q)
 if b*y//z==1:

@@ -14,4 +14,5 @@ while num:
     #print(num%base)
     num //= base   
 print(f"Число {orig} в {base}-ичной системе счисления будет : {res}")
-print(bin(orig)[2:] if base ==2 else hex(orig)[2:])
+print("\nПроверка с помощью функции hex: ")
+print(hex(orig)[2:])
